@@ -1,0 +1,93 @@
+html{
+	font-family: 'Ubuntu Mono', 'Courier', monospace;
+}
+
+input, textarea {
+	font-family: 'Ubuntu Mono', 'Courier', monospace;
+	font-size: 1em;
+	padding: 0.5em 0.7em;
+	outline: none;
+	border-radius: 4px;
+	border: 1px solid rgba(0,0,0,0.2);
+	transition: border 0.1s ease-in-out;
+	display: block;
+	width: 100%;
+	box-sizing: border-box;
+	margin-bottom: 0.5em;
+}
+
+textarea{
+	height: 300px;
+}
+
+input:hover, textarea:hover {
+	border: 1px solid rgba(0,0,0,0.5); 
+}
+
+input:focus, textarea:focus {
+	border: 1px solid cornflowerblue; 
+}
+
+.button {
+	font-family: 'Ubuntu Mono', 'Courier', monospace;
+	font-size: 1em;
+	padding: 0.5em 0.7em;
+	outline: none;
+	border-radius: 4px;
+	border: 1px solid rgba(0,0,0,0.2);
+	background-color: rgba(0,0,0,0.1);
+	transition: all 0.1s ease-in-out;
+	display: inline-block;
+	cursor: pointer;
+	margin-bottom: 0.5em;
+}
+
+.button:hover {
+	border: 1px solid rgba(0,0,0,0.8); 
+	background-color: rgba(0,0,0,0.7);
+	color: white;
+}
+
+.button:active {
+	border: 1px solid cornflowerblue;
+	background-color: cornflowerblue;
+}
+
+#adder, #shower {
+	display: block;
+	position: fixed;
+	top: 50px;
+	bottom: 50px;
+	left: 50px;
+	right: 50px;
+	background-color: white;
+	box-shadow: 0 4px 10px rgba(0,0,0,0.5),  0 0 50px 100px rgba(0,0,0,0.3);
+	border-radius: 5px;
+	padding: 1em;
+	overflow-y: auto;
+}
+
+.hidden {
+	display: none !important;
+}
+
+.caption {
+	display: block;
+	margin-bottom: 0.8em;
+}
+
+.close{
+	display: inline-block;
+	margin-left: auto;
+	float: right;
+	padding: 0.3em 0.5em;
+	margin-top: -0.5em;
+	cursor: pointer;
+	background-color: #f46242;
+	color: white;
+	font-weight: 700;
+	border-radius: 50%;
+	width: 1.5em;
+	height: 1.5em;
+	box-sizing: border-box;
+}

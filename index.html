@@ -2,8 +2,37 @@
 <html>
 <head>
 	<title>hello</title>
+	<script src="https://www.gstatic.com/firebasejs/5.4.1/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/5.4.1/firebase-firestore.js"></script>
+	<script src="js/firebase_init.js"></script>
+	<script src="js/firebase_storage.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/lodash@4.17.11/lodash.min.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/default.css">
 </head>
 <body>
-	<h1>helloowowow</h1>
+	<h1>Code-Sharer</h1>
+	<div class="button" id="bt-add">Add Code</div>
+	<div class="button" id="bt-fetch">Fetch Code</div>
+	<div id="adder" class="hidden">
+		<div class="caption">
+			<span class="title">Add code</span>
+			<span class="close" id="ad-close">X</span>
+		</div>
+		<input type="text" name="ad-uname" id="ad-username" placeholder="Username">
+		<textarea id="codeinput" placeholder="Code"></textarea>
+		<span id="submitbutton" class="button">Add</span>
+		
+	</div>
+	<div id="shower" class="hidden">
+		<div class="caption">
+			<span class="title">Fetch code</span>
+			<span class="close" id="sh-close">X</span>
+		</div>
+		<input type="text" name="sh-uname" id="sh-username" placeholder="Username">
+		<span id="fetchbutton" class="button">Fetch</span>
+		<div id="codeoutput"></div>
+	</div>
+	<script type="text/javascript" src="js/ui_driver.js"></script>
 </body>
 </html>
