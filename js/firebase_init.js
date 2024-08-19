@@ -1,12 +1,12 @@
 // Initialize Firebase
 // TODO: Replace with your project's customized code snippet
 var config = {
-  apiKey: "AIzaSyBsQXOszAtI7__glWi9c-2vpaJi0oh-fNE",
-  authDomain: "code-sharer.firebaseapp.com",
-  databaseURL: "https://code-sharer.firebaseio.com",
-  projectId: "code-sharer",
-  storageBucket: "code-sharer.appspot.com",
-  messagingSenderId: "424977100383"
+  apiKey: "***************************************",
+  authDomain: "**********.firebaseapp.com",
+  databaseURL: "https://********.firebaseio.com",
+  projectId: "**********",
+  storageBucket: "*******.appspot.com",
+  messagingSenderId: "**********"
 };
 
 firebase.initializeApp(config);
